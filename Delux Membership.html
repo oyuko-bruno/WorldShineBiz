@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delux Membership</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>WORLDSHINE.BIZ</h1>
+        </div>
+       <!-- Navigation Section -->
+<nav class="nav">
+    <ul>
+        <li><a href="#"><i class="fas fa-chart-line"></i> Interface Insight</a></li>
+        <li><a href="#"><i class="fas fa-box"></i> Bundle Box</a></li>
+        <li><a href="#"><i class="fas fa-history"></i> Recent Release</a></li>
+        <li><a href="#"><i class="fas fa-handshake"></i> Partnership</a></li>
+    </ul>
+</nav>
+
+        <div class="profile">
+            <span>Alicia</span>
+            <img src="register.PNG" alt="Profile Picture">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="welcome-section">
+            <h2>Hello, Alicia</h2>
+            <b> <p>OFFER MOTO MOTO !!! GUES WHAT GIVING OUT WRITING ACCOUNT FOR ONLY ACADEMIC ACCOUNT 7K FROM 13K AND ARTICLE ACCOUNT 5K FROM 10K</p></b>
+        </section>
+
+        <section class="partnership-box">
+            <div class="partnership-details">
+                <h3>DELUXE MEMBERSHIP</h3>
+                <h2>KES 10,000</h2>
+                <p>Lifetime</p>
+                <hr style="color: #000;">
+                <b><p>70%</p>
+                <p>Forex Classes</p>
+                <p>Online Writing</p>
+                <p>Tiktok Earning</p>
+                <p>110 Per View </p></b>
+                <button>Purchase</button>
+            </div>
+        </section>
+<br>
+        <section class="bundle-box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bundle Box</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <!-- Dynamically loaded content -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+   <!-- Sidebar Section -->
+<aside class="sidebar">
+    <h3>My Financials</h3>
+    <ul>
+        <li> Writing Bundle<i class="fas fa-pen"></i></li>
+        <li></i> Upload Writing<i class="fas fa-upload"></i></li>
+        <li> Deposits<i class="fas fa-money-bill-wave"></i></li>
+        <li></i> Finances<i class="fas fa-dollar-sign"></i></li>
+        <li>Deluxe Membership<i class="fas fa-crown"></i> </li>
+        <li> Trading Bot<i class="fas fa-robot"></i></li>
+        <li> Upload Screenshot<i class="fas fa-image"></i></li>
+        <li> WhatsApp Payouts<i class="fas fa-comments"></i></li>
+        <li> Agent Approval<i class="fas fa-check-circle"></i></li>
+        <li> Agent Confirmation<i class="fas fa-user-check"></i></li>
+        <li>Customer Care<i class="fas fa-headset"></i> </li>
+        <li> Affiliates<i class="fas fa-users"></i></li>
+    </ul>
+</aside>
+
+
+    <script src="script.js"></script>
+    <style>
+        /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.header .logo h1 {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.main-content {
+    width: 82%;
+    padding: 20px;
+}
+
+.welcome-section {
+    background-color: #f5c2c7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+p {
+    margin: 10px 0; /* Adds space between paragraphs */
+}
+
+/* Horizontal Line Styling */
+.partnership-details hr {
+    border: none;
+    border-top: 2px solid black;
+    width: 100%; /* Adjust the width as needed */
+    margin: 10px auto;
+}
+
+.partnership-box {
+    background-color: #FFF5EE;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 0 auto; /* Center the box */
+    width: fit-content; /* Set width to only fit content */
+    max-width: 400px; /* Optionally limit the maximum width */
+}
+
+.partnership-details h2 {
+    font-size: 36px;
+}
+
+.partnership-box button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bundle-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bundle-box th, .bundle-box td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Sidebar Section Styling */
+.sidebar {
+    position:fixed; /* Keep sidebar fixed on the page */
+    top: 80px; /* Adjust space between header and sidebar */
+    right: 0; /* Align the sidebar content to the right */
+    width: 250px; /* Sidebar width */
+    background-color: #000; /* Sidebar background color */
+    color: #fff; /* Sidebar text color */
+    padding: 20px;
+    border-radius: 10px;
+    height: 100vh; /* Full height of the viewport */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
+
+.sidebar h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    cursor: pointer;
+}
+
+.sidebar ul li i {
+    font-size: 18px; /* Icon size */
+}
+
+/* Adding hover effect for better UX */
+.sidebar ul li:hover {
+    background-color: #444; /* Darken the background on hover */
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 150px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-content {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .header .logo h1 {
+        font-size: 18px;
+    }
+
+    .nav ul li a {
+        font-size: 12px;
+    }
+
+    .partnership-box h2 {
+        font-size: 24px;
+    }
+
+    .sidebar {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</body>
+</html>
+
