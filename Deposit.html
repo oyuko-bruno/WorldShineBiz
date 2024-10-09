@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safaricom Mpesa Deposit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <img src="safcomlogo.PNG" alt="Safaricom Mpesa Logo" class="logo">
+            <h2>Mpesa Deposit</h2>
+            <form action="#">
+                <input type="number" placeholder="Enter Amount" required>
+                <input type="text" placeholder="Enter Phone Number i.e 254700100100" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #e7e7e7;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    background-color: #008000;
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+form input[type="number"],
+form input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="number"] {
+    margin-top: 20px;
+}
+
+form button {
+    width: 90%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #008000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #f1f1f1;
+}
+
+    </style>
+</body>
+</html>
