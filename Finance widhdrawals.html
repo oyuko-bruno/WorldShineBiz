@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Bot </title>
+    <title>Finance Withdrawal </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -39,21 +39,14 @@
         </section>
 
         <section class="partnership-box">
+            <h2 style="text-align: center; color: #000;">Make a Withdrawal</h2> <!-- New header added here -->
             <section class="contact-form">
                 <div class="form-details">
-              
                     <form id="contactForm">
-            
-                       <label for="phone-number" style="color: #000;">Make A Transfer</label>
-                        <label for="phone-number" style="color: #000;">Recipient Username</label>
-                        <input type="text" id="phone-number" name="phone-number" >
-                        
-                <label for="number-of-pages" style="color: #000;">Amount</label>
-                <input type="number" id="number-of-pages" name="number-of-pages" >
-    
-                
-                        
-                        <button type="submit">Transfer</button>
+                        <label for="phone-number" style="color: #000;">5% transaction charges apply. Account Balance: KES</label>
+                        <label for="number-of-pages" style="color: #000;">Amount (KES)</label>
+                        <input type="number" id="number-of-pages" name="number-of-pages">
+                        <button type="submit">Withdraw</button>
                     </form>
                 </div>
             </section>
@@ -63,10 +56,10 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Amount</th>
-                        <th>Transferred From</th>
-                        <th>Transferred To</th>
-                        <th>Date</th>
+                        <th>Withdrawal Date</th>
+                        <th>Withdrawal Amount</th>
+                        <th>Transaction Cost</th>
+                        <th>Total Withdrawn</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -176,8 +169,8 @@ body {
     padding: 40px;
     border-radius: 10px;
     margin: 0 auto; /* Center the box */
-    width: fit-content; /* Set width to only fit content */
-    max-width: 400px; /* Optionally limit the maximum width */
+    width:70%; /* Set width to only fit content */
+    max-width: 45%; /* Optionally limit the maximum width */
 }
 
 .partnership-details h2 {
@@ -251,7 +244,7 @@ body {
 }
 /* Contact Form Styling */
 .contact-form {
-    
+
     padding: 20px;
     border-radius: 10px;
     max-width: 500px;
@@ -274,7 +267,7 @@ body {
 
 .form-details input, 
 .form-details textarea {
-    width: 100%;
+    width: 110%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #fff;
@@ -303,7 +296,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 100%;
+    width: 110%;
 }
 
 button:hover {
